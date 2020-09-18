@@ -51,7 +51,7 @@ lint: ## check style with flake8
 	flake8 woodnuk tests
 
 test: ## run tests quickly with the default Python
-	pytest
+	pytest -v --cov=woodnuk --cov-report=term-missing --cov-branch
 
 test-all: ## run tests on every Python version with tox
 	tox
